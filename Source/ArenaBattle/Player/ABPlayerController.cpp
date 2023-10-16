@@ -47,15 +47,12 @@ void AABPlayerController::BeginPlay()
 	SetInputMode(GameOnlyInputMode);
 
 	SaveGameInstance = Cast<UABSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("Player0"), 0));
-	if (SaveGameInstance)
-	{
-		SaveGameInstance->RetryCount++;
-	}
-	else
+	if (!SaveGameInstance)
 	{
 		SaveGameInstance = NewObject<UABSaveGame>();
 		SaveGameInstance->RetryCount = 0;
 	}
+	SaveGameInstance->RetryCount++;
 
 	K2_OnGameRetryCount(SaveGameInstance->RetryCount);
 }
