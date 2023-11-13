@@ -98,7 +98,7 @@ void AABStageGimmick::OnGateTriggerBeginOverlap(UPrimitiveComponent* OverlappedC
 		OverlapResults,
 		NewLocation,
 		FQuat::Identity,
-		FCollisionObjectQueryParams::InitType::AllStaticObjects,
+		FCollisionObjectQueryParams::InitType::AllObjects,
 		FCollisionShape::MakeSphere(775.0f),
 		CollisionQueryParam
 	);
