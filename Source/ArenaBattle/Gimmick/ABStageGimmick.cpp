@@ -8,6 +8,7 @@
 #include "Character/ABCharacterNonPlayer.h"
 #include "Item/ABItemBox.h"
 #include "Interface/ABGameInterface.h"
+#include "Engine/OverlapResult.h"
 
 // Sets default values
 AABStageGimmick::AABStageGimmick()
