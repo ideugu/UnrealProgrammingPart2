@@ -11,6 +11,7 @@
 #include "UI/ABHUDWidget.h"
 #include "CharacterStat/ABCharacterStatComponent.h"
 #include "Interface/ABGameInterface.h"
+#include "GameFramework/GameModeBase.h"
 
 AABCharacterPlayer::AABCharacterPlayer()
 {
